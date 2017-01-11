@@ -1,4 +1,4 @@
-FROM ajaysingh452/ubuntu:14.04
+FROM ajaysingh452/ubuntu:latest
 MAINTAINER ajaysingh452@live.com
 
 ENV OPENFIRE_VERSION=3.10.3 \

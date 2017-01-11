@@ -5,10 +5,10 @@
 Automated builds of the image are available on Dockerhub and is the recommended method of installation.
 
 Note: Builds are also available on Quay.io
-docker pull sameersbn/openfire:3.10.3-17
+docker pull ajaysingh452/openfire:latest
 Alternatively you can build the image yourself.
 
-docker build -t sameersbn/openfire github.com/sameersbn/docker-openfire
+docker build -t ajaysingh452/openfire github.com/ajaysingh452/openfire
 
 # Quickstart
 
@@ -17,7 +17,7 @@ docker build -t sameersbn/openfire github.com/sameersbn/docker-openfire
 docker run --name openfire -d --restart=always \
   --publish 9090:9090 --publish 5222:5222 --publish 7777:7777 \
   --volume /srv/docker/openfire:/var/lib/openfire \
-  sameersbn/openfire:3.10.3-17
+  ajaysingh452/openfire:latest
 Alternatively, you can use the sample docker-compose.yml file to start the container using Docker Compose
 
 Point your browser to http://localhost:9090 and follow the setup procedure to complete the installation. The Build A Free Jabber Server In 10 Minutes video by HAKK5 should help you with the configuration and also introduce you to some of its features.
@@ -46,7 +46,7 @@ To upgrade to newer releases:
 
 Download the updated Docker image:
 
-docker pull sameersbn/openfire:3.10.3-17
+docker pull ajaysingh452/openfire:latest
 Stop the currently running image:
 
 docker stop openfire
@@ -57,7 +57,7 @@ Start the updated image
 
 docker run -name openfire -d \
   [OPTIONS] \
-  sameersbn/openfire:3.10.3-17
+  ajaysingh452/openfire:latest
 
 # Shell Access
 

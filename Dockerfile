@@ -1,5 +1,5 @@
 FROM ajaysingh452/ubuntu:latest
-MAINTAINER  ajaysingh@ttni.co.in
+MAINTAINER  ajay.singh@intellinum.com
 
 ENV OPENFIRE_VERSION=3.10.3 \
     OPENFIRE_USER=openfire \
